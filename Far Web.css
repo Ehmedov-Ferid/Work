@@ -1,0 +1,154 @@
+body {
+    background-color:whitesmoke ;
+    min-height: 100vh;  
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    position: fixed;
+    background-color:whitesmoke;
+}
+a {
+    color: wheat;
+    text-decoration: none;
+}
+.dropdown-menu > .a > button {
+    transition: 0.5s;
+}
+.dropdown-menu > .a > button:hover > a  {
+    color: goldenrod;
+    padding: 5px 5px ;
+}
+.dropdown-menu > .b > button {
+    transition: 0.5s;
+}
+.dropdown-menu > .b > button:hover > a  {
+    color:royalblue;
+    padding: 5px 5px ;
+}
+.dropdown-menu > .c > button {
+    transition: 0.5s;
+}
+.dropdown-menu > .c > button:hover > a  {
+    color:blueviolet;
+    padding: 5px 5px ;
+}
+
+.sa {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin-top: 100px;
+    
+    margin-left: 200px;
+}
+.sa .clip {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;  
+}
+.sa .clip:nth-last-of-type(3) {
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+    background: url(OJ91BD0.jpg);
+    background-size: cover;
+}
+.sa .clip:nth-last-of-type(2) {
+    background: url(Wavy_Bus-20_Single-04.jpg);
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+    background-size: cover;
+}
+.container .clip:nth-last-of-type(1) {
+    background: url(833.jpg);
+    background-size: cover ;
+    clip-path: polygon(100% 0 , 100% 0 , 100% 100% , 45% 100%);
+}
+.sa:hover .clip {
+    clip-path: polygon(100% 0 , 100% 0 , 100% 100% , 100% 100% );
+}
+.sa .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.clip .clip-content {
+    background-color: white;
+    width:40%;
+    position:absolute;
+    bottom: -100%;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    transition: 500ms  1s ;
+    
+}
+.clip:hover .clip-content {
+    bottom: 10%;
+}
+.h1 {
+    color: goldenrod;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.css1 {
+    color:royalblue;
+    margin-right: 5px;
+    font-size:  20px;
+}
+.boot1 {
+    color:blueviolet;
+    margin-right: 5px;
+    font-size:  20px;
+}
+.qa > input  {
+    visibility: hidden;
+}
+.qa:hover > input  {
+    visibility: visible;
+} 
+.salam2 {
+    background-color: grey;
+}
+.list-group {
+    position: absolute; 
+    right: -100%;
+    top: 0;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.5s right ;
+    border-top-left-radius: 0;
+}
+#chekk:checked + .labelll +  .list-group  {
+    right: -225px;
+}
+.labelll {
+    cursor: pointer;
+}
+
+.ass {
+    background-color: grey;
+}
+.list-group > li > a {
+    color: black;
+}
+.list-group > li {
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.list-group > li:hover > a  {
+    color: goldenrod;
+}
+#chekk:checked + .labelll > div  {
+    visibility: collapse;
+    transition: 400ms ease-in;
+}
+
+
+
+
+
+
+
+
